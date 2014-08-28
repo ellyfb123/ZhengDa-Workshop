@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration</title>
+
+    <!-- Bootstrap -->
+    <link href="include/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="include/css/form.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+
+      <form id="form" class="form" role="form">
+
+        <fieldset>
+
+          <h2 class="form-heading">Registration</h2>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input id="email" type="email" class="form-control" placeholder="Email address" autofocus>
+            <span class="help-inline"></span>
+          </div>
+
+
+          <div class="form-group" >
+            <label for="password">Password</label>
+            <input id="password" type="password" class="form-control" placeholder="Password">
+            <input id="repeatPassword" type="password" class="margin-bottom-10 form-control" placeholder="Repeat Password">
+            <span class="help-inline"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="birthday">Birthday</label>
+            <input id="birthday" type="date" class="form-control" placeholder="Birthday">
+            <span class="help-inline"></span>
+          </div>
+
+
+          <div class="form-group">
+            <label for="gender">Gender</label>
+
+            <div id="gender" class="radio">
+              <label>
+                <input type="radio" name="gender" value="male">
+                Male
+              </label>
+              <label>
+                <input type="radio" name="gender" value="female">
+                Female
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="hobby">Hobby</label>
+            <div id="hobby">
+              <div class="checkbox">
+                <label>
+                  <input name="hobby" type="checkbox" value="basketball"> Basket Ball
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input name="hobby" type="checkbox" value="swimming"> Swimming
+                </label>
+              </div><div class="checkbox">
+                <label>
+                  <input name="hobby" type="checkbox" value="tennis"> Tennis
+                </label>
+              </div><div class="checkbox">
+                <label>
+                  <input name="hobby" type="checkbox" value="football"> Football
+                </label>
+              </div><div class="checkbox">
+                <label>
+                  <input name="hobby" type="checkbox" value="dancing"> Dancing
+                </label>
+              </div>
+            </div>
+            <span class="help-inline"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="desc">Describe yourself</label>
+            <textarea id="desc" class="form-control" rows="3" placeholder="Describe yourself"></textarea>
+          </div>
+
+
+          <button class="btn btn-lg btn-primary btn-block" type="button" onclick="submitForm()">Register</button>
+        </fieldset>
+      </form>
+
+    </div> <!-- /container -->
+    <script type="text/javascript" src="include/js/form.js"></script>
+  </body>
+</html>

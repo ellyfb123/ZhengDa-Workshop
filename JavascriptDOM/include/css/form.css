@@ -1,0 +1,77 @@
+body {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #eee;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px !important;
+}
+
+.form {
+  max-width: 550px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form .form-heading,
+.form .checkbox {
+  margin-bottom: 10px;
+}
+.form .checkbox {
+  font-weight: normal;
+}
+
+
+.form .form-control {
+  max-width: 330px;
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form .form-control:focus {
+  z-index: 2;
+}
+.form .input-group {
+  margin-bottom: 10px;
+}
+.form input[type="email"] {
+  margin-bottom: 10px;
+}
+.form input[type="password"] {
+  margin-bottom: -1px;
+}
+.form input[type="date"] {
+  margin-bottom: 10px;
+}
+
+.form-group.error label,
+.form-group.error .help-block,
+.form-group.error .help-inline {
+  color: #b94a48;
+}
+
+.form-group.error input,
+.form-group.error select,
+.form-group.error textarea,
+.form-group.error ::-webkit-input-placeholder {
+  color: #b94a48;
+  border-color: #b94a48;
+}
+.form-group.error input:focus,
+.form-group.error select:focus,
+.form-group.error textarea:focus {
+  border-color: #953b39;
+  -webkit-box-shadow: 0 0 6px #d59392;
+  -moz-box-shadow: 0 0 6px #d59392;
+  box-shadow: 0 0 6px #d59392;
+}
+.form-group.error .input-prepend .add-on,
+.form-group.error .input-append .add-on {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #b94a48;
+}
